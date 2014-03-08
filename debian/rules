@@ -8,3 +8,10 @@ override_dh_auto_test:
 override_dh_clean:
 	dh_clean
 	rm -f proton-c/bindings/python/proton.pyo
+	rm -f proton-c/bindings/python/proton.pyc
+	rm -f proton-c/src/protocol.pyc
+	rm -f proton-c/mllib/dom.pyc
+	rm -f proton-c/mllib/parsers.pyc
+	rm -f proton-c/mllib/__init__.pyc
+	rm -f proton-c/mllib/transforms.pyc
+
