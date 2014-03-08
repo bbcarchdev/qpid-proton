@@ -1,19 +1,10 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@ --buildsystem=cmake
+	dh $@ --buildsystem=cmake --builddirectory build
 
 override_dh_auto_test:
 
 override_dh_clean:
 	dh_clean
-	rm -f proton-c/bindings/python/proton.pyc
-	rm -f proton-c/mllib/__init__.pyc
-	rm -f proton-c/mllib/dom.pyc
-	rm -f proton-c/mllib/parsers.pyc
-	rm -f proton-c/mllib/transforms.pyc
-	rm -f proton-c/src/protocol.pyc
-	rm -f tests/python/proton_tests/__init__.pyc
-	rm -f tests/python/proton_tests/codec.pyc
-	rm -f tests/python/proton_tests/common.pyc
-
+	rm -f proton-c/bindings/python/proton.pyo
