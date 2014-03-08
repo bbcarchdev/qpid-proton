@@ -2,18 +2,36 @@ Source: qpid-proton
 Section: misc
 Priority: extra
 Maintainer: Mo McRoberts <mo.mcroberts@bbc.co.uk>
-Build-Depends: debhelper (>= 8.9.0~), cmake, uuid-dev, python (>= 2.6.0~)
-X-Python-Version: 2.6
+Build-Depends: debhelper (>= 8.9.0~), cmake, uuid-dev, python (>= 2.7.0~)
+X-Python-Version: 2.7
 Standards-Version: 3.9.3
 Homepage: http://qpid.apache.org/proton/
 
+Package: qpid-proton-tools
+Architecture: any
+Depends: ${shlib:Depends}, ${misc:Depends}, libqpid-proton2 (= ${binary:Version})
+Description: Apache Qpid Proton AMQP client libraries (command-line tools)
+  Apache Qpid is a cross-platform enterprise messaging system which implements
+  the Advanced Message Queuing Protocol (AMQP).
+  .
+  This package contains the Qpid Proton command-line tools.
+ 
 Package: libqpid-proton2
 Architecture: any
 Depends: ${shlib:Depends}, ${misc:Depends}
 Description: Apache Qpid Proton AMQP client libraries
+  Apache Qpid is a cross-platform enterprise messaging system which implements
+  the Advanced Message Queuing Protocol (AMQP).
+  .
+  This package contains the Qpid Proton AMQP client libraries.
 
 Package: libqpid-proton-dev
 Architecture: any
-Depends: libqpid-proton0 (= ${binary:Version}), ${misc:Depends}
-Description: Apache Qpid Proton AMQP client libraries
+Depends: libqpid-proton1 (= ${binary:Version}), ${misc:Depends}
+Description: Apache Qpid Proton AMQP client libraries (development files)
+  Apache Qpid is a cross-platform enterprise messaging system which implements
+  the Advanced Message Queuing Protocol (AMQP).
+  .
+  This package contains the development files for the Qpid Proton AMQP client
+  libraries.
 

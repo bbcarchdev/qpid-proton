@@ -1,6 +1,3 @@
-usr/bin/proton
-usr/bin/proton-dump
 usr/lib/libqpid-proton.so.2
 usr/lib/libqpid-proton.so.2.0.0
-usr/share/man/man1/proton.1
 

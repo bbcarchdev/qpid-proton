@@ -1,3 +1,11 @@
+qpid-proton (0.6-2) unstable; urgency=low
+
+  * Clean up Debian build machinery; don't build bindings not currently
+    being packaged.
+  * Add qpid-proton-tools package.
+
+ -- Mo McRoberts <mo.mcroberts@bbc.co.uk>  Sat, 08 Mar 2014 22:56:55 +0000
+
 qpid-proton (0.6-1) UNRELEASED; urgency=low
 
   * Initial release.

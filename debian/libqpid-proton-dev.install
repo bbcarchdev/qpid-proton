@@ -1,5 +1,7 @@
 usr/lib/libqpid-proton.so
 usr/lib/pkgconfig/*
 usr/include/proton/*
-usr/share/proton/examples/*
+usr/share/proton/examples usr/share/doc/libqpid-proton-dev/
+usr/share/proton-0.6/docs/api-c usr/share/doc/libqpid-proton-dev/
+
 

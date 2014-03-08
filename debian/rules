@@ -5,6 +5,9 @@
 
 override_dh_auto_test:
 
+override_dh_auto_configure:
+	dh_auto_configure -- -DSYSCONF_INSTALL_DIR=/etc -DBUILD_PERL=OFF -DBUILD_PYTHON=OFF -DBUILD_RUBY=OFF -DBUILD_PHP=OFF -DBUILD_JAVA=OFF -DBUILD_TESTS=OFF
+
 override_dh_clean:
 	dh_clean
 	rm -f proton-c/bindings/python/proton.pyo
@@ -14,4 +17,7 @@ override_dh_clean:
 	rm -f proton-c/mllib/parsers.pyc
 	rm -f proton-c/mllib/__init__.pyc
 	rm -f proton-c/mllib/transforms.pyc
+	rm -f tests/python/proton_tests/codec.pyc
+	rm -f tests/python/proton_tests/__init__.pyc
+	rm -f tests/python/proton_tests/common.pyc
 
