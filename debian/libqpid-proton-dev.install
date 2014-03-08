@@ -1,0 +1,5 @@
+usr/lib/libqpid-proton.so
+usr/lib/pkgconfig/*
+usr/include/proton/*
+usr/share/proton/examples/*
+

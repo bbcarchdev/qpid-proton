@@ -1,0 +1,10 @@
+Package: libqpid-proton2
+Source: qpid-proton
+Version: 0.6-1
+Architecture: amd64
+Maintainer: Mo McRoberts <mo.mcroberts@bbc.co.uk>
+Installed-Size: 392
+Section: misc
+Priority: extra
+Homepage: http://qpid.apache.org
+Description: Apache Qpid Proton AMQP client libraries

@@ -1,0 +1,19 @@
+Source: qpid-proton
+Section: misc
+Priority: extra
+Maintainer: Mo McRoberts <mo.mcroberts@bbc.co.uk>
+Build-Depends: debhelper (>= 8.9.0~), cmake, uuid-dev, python (>= 2.6.0~)
+X-Python-Version: 2.6
+Standards-Version: 3.9.3
+Homepage: http://qpid.apache.org/proton/
+
+Package: libqpid-proton2
+Architecture: any
+Depends: ${shlib:Depends}, ${misc:Depends}
+Description: Apache Qpid Proton AMQP client libraries
+
+Package: libqpid-proton-dev
+Architecture: any
+Depends: libqpid-proton0 (= ${binary:Version}), ${misc:Depends}
+Description: Apache Qpid Proton AMQP client libraries
+

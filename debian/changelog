@@ -1,0 +1,5 @@
+qpid-proton (0.6-1) UNRELEASED; urgency=low
+
+  * Initial release.
+
+ -- Mo McRoberts <mo.mcroberts@bbc.co.uk>  Fri, 07 Mar 2014 15:29:26 +0000

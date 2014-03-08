@@ -1,0 +1,5 @@
+dc9d69fd9df1c086638936f19bbc0d32  usr/bin/proton
+8db467cbcc767821e692e34be6bde2ba  usr/bin/proton-dump
+d37acaa15275eb827f7d604fc6d3c201  usr/lib/libqpid-proton.so.2.0.0
+858953f753fe67b1a7722e55e5b93765  usr/share/doc/libqpid-proton2/changelog.Debian.gz
+3549a2ff44827af0b3e30f8ac7f760db  usr/share/man/man1/proton.1.gz
