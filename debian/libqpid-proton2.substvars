@@ -1,2 +1,0 @@
-shlibs:Depends=libc6 (>= 2.4), libqpid-proton2, libuuid1 (>= 2.16)
-misc:Depends=
