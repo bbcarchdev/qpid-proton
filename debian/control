@@ -27,7 +27,7 @@ Description: Apache Qpid Proton AMQP client libraries
 
 Package: libqpid-proton-dev
 Architecture: any
-Depends: libqpid-proton1 (= ${binary:Version}), ${misc:Depends}
+Depends: libqpid-proton2 (= ${binary:Version}), ${misc:Depends}
 Description: Apache Qpid Proton AMQP client libraries (development files)
   Apache Qpid is a cross-platform enterprise messaging system which implements
   the Advanced Message Queuing Protocol (AMQP).
