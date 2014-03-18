@@ -1,12 +1,14 @@
 #!/usr/bin/make -f
 
+DEB_HOST_MULTIARCH := $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
 %:
 	dh $@ --buildsystem=cmake --builddirectory build
 
 override_dh_auto_test:
 
 override_dh_auto_configure:
-	dh_auto_configure -- -DSYSCONF_INSTALL_DIR=/etc -DBUILD_PERL=OFF -DBUILD_PYTHON=OFF -DBUILD_RUBY=OFF -DBUILD_PHP=OFF -DBUILD_JAVA=OFF -DBUILD_TESTS=OFF
+	dh_auto_configure -- -DSYSCONF_INSTALL_DIR=/etc -DBUILD_PERL=OFF -DBUILD_PYTHON=OFF -DBUILD_RUBY=OFF -DBUILD_PHP=OFF -DBUILD_JAVA=OFF -DBUILD_TESTS=OFF -DLIB_INSTALL_DIR=/usr/lib/$(DEB_HOST_MULTIARCH) -DPROTON_LIBRARY=/usr/lib/$(DEB_HOST_MULTIARCH)/libqpid-proton.so
 
 override_dh_clean:
 	dh_clean
