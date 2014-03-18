@@ -1,3 +1,9 @@
+qpid-proton (0.6-5) UNRELEASED; urgency=low
+
+  * Add multi-arch support.
+
+ -- Mo McRoberts <mo.mcroberts@bbc.co.uk>  Tue, 18 Mar 2014 21:37:47 +0000
+
 qpid-proton (0.6-4) unstable; urgency=high
 
   * Correct incorrect dependency in libqpid-proton-dev

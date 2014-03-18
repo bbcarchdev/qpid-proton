@@ -2,7 +2,7 @@ Source: qpid-proton
 Section: misc
 Priority: extra
 Maintainer: Mo McRoberts <mo.mcroberts@bbc.co.uk>
-Build-Depends: debhelper (>= 8.9.0~), cmake, uuid-dev, libssl-dev, python (>= 2.7.0~), doxygen
+Build-Depends: debhelper (>= 9), cmake, uuid-dev, libssl-dev, python (>= 2.7.0~), doxygen, d-shlibs (>= 0.48~)
 X-Python-Version: 2.7
 Standards-Version: 3.9.3
 Homepage: http://qpid.apache.org/proton/
@@ -18,6 +18,8 @@ Description: Apache Qpid Proton AMQP client libraries (command-line tools)
  
 Package: libqpid-proton2
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlib:Depends}, ${misc:Depends}
 Description: Apache Qpid Proton AMQP client libraries
   Apache Qpid is a cross-platform enterprise messaging system which implements
@@ -27,6 +29,8 @@ Description: Apache Qpid Proton AMQP client libraries
 
 Package: libqpid-proton-dev
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: libqpid-proton2 (= ${binary:Version}), ${misc:Depends}
 Description: Apache Qpid Proton AMQP client libraries (development files)
   Apache Qpid is a cross-platform enterprise messaging system which implements
